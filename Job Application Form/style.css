@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.subtitle_small {
+  font-size: 0.9em;
+  color: #837f7f;
+}
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-size: 1rem;
+  /* text bigger */
+  padding: 10px 12px;
+  /* form field bigger */
+  /* width: 100%; */
+  /* box-sizing: border-box; */
+}
+input,
+select,
+textarea:focus {
+  outline-color: #007bff;
+  /* outline: none; */
+}
+/* input:focus {
+  border-color: #007bff;
+  outline: none;
+} */
+.file_upload,
+select {
+  /* display: flex; */
+  /* align-items: center;
+  gap: 10px; */
+  border-color: #007bff;
+  /* outline: none; */
+}
+.button_container {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: transparent solid 2px;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+  /* text-size-adjust: 20px; */
+  cursor: pointer;
+  /* color: white;
+  border-radius: 8px;
+  cursor: pointer; */
+  transition: 0.2s ease-in;
+}
+button:hover {
+  background-color: #007bff;
+  color: greenyellow;
+  border: 5px solid #1500ffc5;
+  transition: 0.2s ease-out;
+}
+.textarea_container {
+  grid-column: 1 / span 2;
+  resize: vertical;
+  /* display: flex; */
+
+}
+.textarea_container textarea {
+  /* padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+  min-height: 120px;
+  font-size: 14px;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+  /* box-sizing: border-box; */
+}
+@media (max-width: 460px) {
+  .textarea_container {
+    grid-column: 1 / span 1;
+  }
+  /* .form_container {
+    grid-template-columns: 1fr;
+  }
+  .button_container {
+    justify-content: center;
+  } */
+}
